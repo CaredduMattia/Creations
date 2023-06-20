@@ -15,3 +15,6 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+Route::get('/mocs', [PublicController::class, 'mocs'])->name('mocs');
+Route::get('/externalProjects', [PublicController::class, 'externalProjects'])->name('externalProjects');
+Route::get('/about', [PublicController::class, 'about'])->name('about');
